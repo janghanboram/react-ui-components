@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/storybook-static
+encodings.xml
+misc.xml
+modules.xml
+ui-elements.iml
+workspace.xml
