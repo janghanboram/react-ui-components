@@ -1,6 +1,6 @@
 {
   "name": "react-ui-elements-robin",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "module": "dist/index.js",
   "license": "MIT",
   "types": "dist/types/index.d.ts",
@@ -8,6 +8,7 @@
     "/dist"
   ],
   "dependencies": {
+    "@rollup/plugin-image": "^2.0.4",
     "@storybook/addon-viewport": "^5.2.8",
     "prop-types": "^15.7.2",
     "react-spring": "^8.0.27"
