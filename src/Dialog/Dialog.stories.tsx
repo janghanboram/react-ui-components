@@ -59,7 +59,7 @@ export const cancellable = () => {
 export const emojiType = () => {
     return (
         <Dialog
-            emoji="😩"
+            emoji="🎉"
             type="emoji"
             visible={true}
             title="적정 판매금액 계산 실패"

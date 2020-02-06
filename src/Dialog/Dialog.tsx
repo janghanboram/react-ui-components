@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import {Fragment} from 'react';
 import {css, jsx} from '@emotion/core';
+import Emoji from '../Emoji/Emoji';
 import ButtonGroup from '../ButtonGroup/ButtonGroup';
 import Button from '../Button/Button';
 import {useTransition, animated} from 'react-spring/web.cjs';
@@ -108,7 +109,9 @@ const Dialog = ({
                         {
                             type === 'emoji' && <div css={whiteCenterBox}>
                                 <div css={dialogHeader[type]}>
-                                    {emoji && <h2 css={emojiStyle}>{emoji}</h2>}
+                                    {emoji && <h2 css={emojiStyle}>
+                                        <Emoji value={emoji} width={48} height={48}/>   
+                                    </h2>}
                                     {title && <h3>{title}</h3>}
                                 </div>
                                 <div css={dialogBody[type]}>
