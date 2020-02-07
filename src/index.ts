@@ -3,3 +3,4 @@ export { default as ButtonGroup } from './ButtonGroup/ButtonGroup';
 export { default as Dialog } from './Dialog/Dialog';
 export { default as Icon } from './Icon/Icon';
 export { default as Switch } from './Switch/Switch';
+export { default as Emoji } from './Emoji/Emoji';
