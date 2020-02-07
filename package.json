@@ -1,6 +1,6 @@
 {
   "name": "react-ui-elements-robin",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "module": "dist/index.js",
   "license": "MIT",
   "types": "dist/types/index.d.ts",
@@ -8,7 +8,6 @@
     "/dist"
   ],
   "dependencies": {
-    "@rollup/plugin-image": "^2.0.4",
     "@storybook/addon-viewport": "^5.2.8",
     "prop-types": "^15.7.2",
     "react-spring": "^8.0.27"
@@ -29,6 +28,7 @@
     "rollup": "^1.27.5",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-image": "^1.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^3.0.1",
