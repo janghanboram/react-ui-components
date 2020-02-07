@@ -1,12 +1,18 @@
 {
   "name": "react-ui-elements-robin",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "module": "dist/index.js",
   "license": "MIT",
   "types": "dist/types/index.d.ts",
   "files": [
     "/dist"
   ],
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
   "dependencies": {
     "@storybook/addon-viewport": "^5.2.8",
     "prop-types": "^15.7.2",
@@ -33,12 +39,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^3.0.1",
     "typescript": "^3.7.2"
-  },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.22",
