@@ -9,7 +9,7 @@ import * as color from '../shared/constants/colors';
 
 export type DialogProps = {
     type?: 'normal' | 'emoji' | 'loader';
-    emoji?: string;
+    emoji?: React.ReactNode;
     visible: boolean;
     title?: string;
     description?: string;
@@ -109,9 +109,9 @@ const Dialog = ({
                         {
                             type === 'emoji' && <div css={whiteCenterBox}>
                                 <div css={dialogHeader[type]}>
-                                    {emoji && <h2 css={emojiStyle}>
-                                        <Emoji value={emoji} width={48} height={48}/>   
-                                    </h2>}
+                                    <h2 css={emojiStyle}>
+                                        {emoji}
+                                    </h2>
                                     {title && <h3>{title}</h3>}
                                 </div>
                                 <div css={dialogBody[type]}>
@@ -287,7 +287,7 @@ const dialogBody = {
 const emojiStyle = css`
   font-size: 42px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 16px 0;
 `
 
 const loader = css`

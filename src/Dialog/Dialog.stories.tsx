@@ -1,4 +1,5 @@
 import React from 'react';
+import Emoji from '../Emoji/Emoji'
 import Dialog from './Dialog';
 import {withKnobs, text, boolean, select} from '@storybook/addon-knobs';
 
@@ -57,9 +58,10 @@ export const cancellable = () => {
 };
 
 export const emojiType = () => {
+    const EmojiDom = <Emoji value="🎉" width={48} height={48} />;
     return (
         <Dialog
-            emoji="🎉"
+            emoji={EmojiDom}
             type="emoji"
             visible={true}
             title="적정 판매금액 계산 실패"
